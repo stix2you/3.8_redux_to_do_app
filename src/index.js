@@ -4,7 +4,7 @@ import { addTodo, toggleTodo, editTodo, deleteTodo } from "./actions";
 import "./index.scss";
 
 // Must import the store to use it in the app
-import { createStore } from 'redux';
+import { createStore } from 'redux';  
 // Must import the Provider to use the store in the app
 import todos from './reducers';
 
