@@ -2,14 +2,13 @@ import { createRoot } from "react-dom/client";
 import MainView from "./components/main-view/main-view";
 import { addTodo, toggleTodo, editTodo, deleteTodo } from "./actions";
 import "./index.scss";
-
-// Must import the store to use it in the app
-import { createStore } from 'redux';  
-// Must import the Provider to use the store in the app
-import todos from './reducers';
+import { createStore } from "redux";            // Must import the store to use it in the app
+import todos from './reducers';                // Must import the Provider to use the store in the app
 
 // Create the store
 const store = createStore(todos);
+
+console.log('Initial State', store.getState());
 
 // Dispatch some actions to populate the store
 
